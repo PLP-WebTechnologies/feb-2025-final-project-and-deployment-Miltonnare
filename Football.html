@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Football.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Blog App</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">Miltonnare's Blog App</div>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#politics">Politics</a></li>
+            <li><a href="#football">Football</a></li>
+            <li><a href="#tech">Tech Trends</a></li>
+            <li><a href="#crypto">Crypto</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <li><form class="search-form" action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search blog..." />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </li>
+        </ul>
+        
+    </nav>
+</header>
+<section class="football-posts" id="football">
+    <h2>Latest in Kenyan Football</h2>
+  
+    <div class="posts-container" id="football-posts-container">
+      <div class="post-card">
+        <div class="badge">Football</div>
+        <img src="images/football1.jpg" alt="Football Thumbnail">
+        <div class="post-content">
+          <h3>Gor Mahia Secures League Title</h3>
+          <p class="date">May 1, 2025</p>
+          <p class="excerpt">Gor Mahia triumphs again in the Kenya Premier League with a stellar performance this season...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+  
+      <div class="post-card">
+        <div class="badge">Football</div>
+        <img src="images/football2.jpg" alt="Football Thumbnail">
+        <div class="post-content">
+          <h3>Kenya National Team Gears Up</h3>
+          <p class="date">April 29, 2025</p>
+          <p class="excerpt">The Harambee Stars prepare for the upcoming AFCON qualifiers with a new coach and strategy...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="badge">Football</div>
+        <img src="images/football2.jpg" alt="Football Thumbnail">
+        <div class="post-content">
+          <h3>Kenya National Team Gears Up</h3>
+          <p class="date">April 29, 2025</p>
+          <p class="excerpt">The Harambee Stars prepare for the upcoming AFCON qualifiers with a new coach and strategy...</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+  
+      <!-- More posts can be dynamically added here -->
+    </div>
+  
+    <div class="load-more-container">
+      <button id="load-more-football">Load More</button>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        
+    </div>
+</footer>
+</body>
+</html>

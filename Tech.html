@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Tech.css">
+    <title>Blog App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Miltonnare's Blog App</div>
+    
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#football">Football</a></li>
+                <li><a href="#tech">Tech Trends</a></li>
+                <li><a href="#crypto">Crypto</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="tech-posts" id="tech">
+        <h2>Tech Trends</h2>
+        <div class="posts-container">
+          <div class="post-card">
+            <span class="badge">Tech</span>
+            <img src="images/ai.jpg" alt="AI in Kenya">
+            <div class="post-content">
+              <h3>AI Innovations Reshaping Kenya</h3>
+              <p class="date">April 22, 2025</p>
+              <p class="excerpt">
+                Kenya’s tech startups are leveraging AI to improve agriculture, finance, and education at an impressive scale...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Tech</span>
+            <img src="images/fiber.jpg" alt="Internet infrastructure">
+            <div class="post-content">
+              <h3>5G Rollout Accelerates Nationwide</h3>
+              <p class="date">April 19, 2025</p>
+              <p class="excerpt">
+                The Communications Authority of Kenya confirms that major cities now support full 5G access with record speeds...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Tech</span>
+            <img src="images/blockchain.jpg" alt="Blockchain adoption">
+            <div class="post-content">
+              <h3>Blockchain Startups Gain Momentum</h3>
+              <p class="date">April 15, 2025</p>
+              <p class="excerpt">
+                Young innovators are embracing blockchain for transparency in supply chains, digital IDs, and voting systems...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="load-more-container">
+          <button id="load-more-tech">Load More</button>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            
+        </div>
+    </footer>      
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Enter.css">
+    <title>Blog App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Miltonnare's Blog App</div>
+    
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#politics">Politics</a></li>
+                <li><a href="#football">Football</a></li>
+                <li><a href="#tech">Tech Trends</a></li>
+                <li><a href="#crypto">Crypto</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="#contacts">Contact</a></li>
+                <li><form class="search-form" action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search blog..." />
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section class="entertainment-posts" id="entertainment">
+        <h2>Entertainment</h2>
+        <div class="posts-container">
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/filmfestival.jpg" alt="Kenyan Film Festival">
+            <div class="post-content">
+              <h3>Kenyan Film Festival Attracts Global Eyes</h3>
+              <p class="date">April 25, 2025</p>
+              <p class="excerpt">
+                The Nairobi Film Festival has seen a surge in global entries, spotlighting local talent and authentic African narratives...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/musicawards.jpg" alt="Music Awards">
+            <div class="post-content">
+              <h3>Top Artists Shine at Kenyan Music Awards</h3>
+              <p class="date">April 20, 2025</p>
+              <p class="excerpt">
+                Sauti Sol, Nadia Mukami, and others won big at this year’s national music awards, celebrating local sound innovation...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+      
+          <div class="post-card">
+            <span class="badge">Entertainment</span>
+            <img src="images/comedy.jpg" alt="Comedy Night">
+            <div class="post-content">
+              <h3>Comedy Nights: The Rise of Stand-Up Culture</h3>
+              <p class="date">April 17, 2025</p>
+              <p class="excerpt">
+                Nairobi’s comedy clubs are booming with fresh talent turning everyday struggles into laughter-packed performances...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="load-more-container">
+          <button id="load-more-entertainment">Load More</button>
+        </div>
+      </section>
+      
+
+
+
+    <footer>
+        <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            
+        </div>
+    </footer>
+</body>
+</html>
