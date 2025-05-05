@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="Tech.css">
     <title>Blog App</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Miltonnare's Blog App</div>
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
     
             <!-- Hamburger Icon -->
             <div class="menu-toggle" id="menu-toggle">
               <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#politics">Politics</a></li>
-                <li><a href="#football">Football</a></li>
-                <li><a href="#tech">Tech Trends</a></li>
-                <li><a href="#crypto">Crypto</a></li>
-                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="#">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
                 <li><a href="#contacts">Contact</a></li>
                 <li><form class="search-form" action="/search" method="GET">
                     <input type="text" name="q" placeholder="Search blog..." />
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
             </li>
+            <li><div class="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
             </ul>
             
         </nav>
@@ -38,7 +44,7 @@
         <div class="posts-container">
           <div class="post-card">
             <span class="badge">Tech</span>
-            <img src="images/ai.jpg" alt="AI in Kenya">
+            <img src="images/ai.png" alt="AI in Kenya">
             <div class="post-content">
               <h3>AI Innovations Reshaping Kenya</h3>
               <p class="date">April 22, 2025</p>
@@ -51,7 +57,7 @@
       
           <div class="post-card">
             <span class="badge">Tech</span>
-            <img src="images/fiber.jpg" alt="Internet infrastructure">
+            <img src="images/5g.png" alt="Internet infrastructure">
             <div class="post-content">
               <h3>5G Rollout Accelerates Nationwide</h3>
               <p class="date">April 19, 2025</p>
@@ -64,30 +70,61 @@
       
           <div class="post-card">
             <span class="badge">Tech</span>
-            <img src="images/blockchain.jpg" alt="Blockchain adoption">
+            <img src="images/web3.png" alt="Web3 Technology">
             <div class="post-content">
-              <h3>Blockchain Startups Gain Momentum</h3>
-              <p class="date">April 15, 2025</p>
+              <h3>Web3 Technology Gains Momentum in Kenya</h3>
+              <p class="date">May 10, 2025</p>
               <p class="excerpt">
-                Young innovators are embracing blockchain for transparency in supply chains, digital IDs, and voting systems...
+                Web3 technology is the innovation that brought the world digital assets such as cryptocurrencies and is now being 
+                used to bring traditional assets into the...
               </p>
               <a href="#" class="read-more">Read More</a>
             </div>
           </div>
+
+          <div class="post-card">
+            <span class="badge">Tech</span>
+            <img src="images/ecitiz.png" alt="Internet infrastructure">
+            <div class="post-content">
+              <h3>How E-CITIZEN is Revolutionizing Goverment Services</h3>
+              <p class="date">May 20, 2025</p>
+              <p class="excerpt">
+               The Goverment services have taken a new look through the use of E-Citizen and Kenya with partnership with China are planning...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="post-card">
+            <span class="badge">Tech</span>
+            <img src="images/ai2.png" alt="Internet infrastructure">
+            <div class="post-content">
+              <h3>How Kenya is Leading in AI Adoption</h3>
+              <p class="date">May 20, 2025</p>
+              <p class="excerpt">
+               The recent data indicates Kenya is leading in AI adoption with US being the Indomitable in AI Adoption. This Indicates that Kenya is...
+              </p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+
         </div>
+
       
         <div class="load-more-container">
           <button id="load-more-tech">Load More</button>
         </div>
       </section>
-      <footer>
-        <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-    </footer>      
+      </footer>  
+      <script src="Theme.js"></script>
+      <script src="Tech.js"></script>  
 </body>
 </html>

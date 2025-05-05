@@ -6,14 +6,16 @@
     <title>Blog App Kenya</title>
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="Home.css"> <!-- External CSS file -->
 </head>
 <body>
     <header>
       
         <nav>
-            <div class="logo">Miltonnare's Blog App</div>
+          <div class="logo">
+            <span class="logo-text">Miltonnare's</span><span class="logo-tagline">Blog</span>
+          </div>
 
             <!-- Hamburger Icon -->
             <div class="menu-toggle" id="menu-toggle">
@@ -21,16 +23,20 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#politics">Politics</a></li>
-                <li><a href="#football">Football</a></li>
-                <li><a href="#tech">Tech Trends</a></li>
-                <li><a href="#crypto">Crypto</a></li>
-                <li><a href="#entertainment">Entertainment</a></li>
+                <li><a href="politics.html">Politics</a></li>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Tech.html">Tech Trends</a></li>
+                <li><a href="Crypto.html">Crypto</a></li>
+                <li><a href="Enter.html">Entertainment</a></li>
                 <li><a href="#contacts">Contact</a></li>
                 <li><form class="search-form" action="/search" method="GET">
                     <input type="text" name="q" placeholder="Search blog..." />
                     <button type="submit"><i class="fas fa-search"></i></button>
                 </form>
+            </li>
+            <li><div class="theme-toggle">
+              <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
             </li>
             </ul>
             
@@ -40,41 +46,81 @@
     <section class="hero">
         <h1>Welcome to Kenyan Trends Blog</h1>
         <p>Explore real-time updates on politics, tech, crypto, football, and more. Share your voice too!</p>
+        <p>TRUSTWORTHY AND UPTO DATE WITH THE CURRENT TRENDS IN DIVERSIFIED SPACE </p>
     </section>
 
-    <section class="category" id="categories">
-        <h2>Categories</h2>
+    <section class="category">
+        <h2>Explore Categories</h2>
         <div class="category-cards">
-            <div class="card" id="politics">Politics</div>
-            <div class="card" id="football">Football</div>
-            <div class="card" id="tech">Tech Trends</div>
-            <div class="card" id="crypto">Crypto</div>
-            <div class="card" id="entertainment">Entertainment</div>
+          <a href="politics.html" class="card-link">
+          <div class="card">
+            <img src="images/Traore.png" alt="News" class="card-icon" />
+            <p>News</p>
+          </a>
+          </div>
+          <a href="Football.html" class="card-link">
+          <div class="card">
+            <img src="images/Yamal.png" alt="Football" class="card-icon" />
+            <p>Football</p>
+          </a>
+          </div>
+          <a href="Crypto.html" class="card-link">
+          <div class="card">
+            <img src="images/Bitcoin.png" alt="Crypto" class="card-icon" />
+            <p>Crypto</p>
+          </a>
+          </div>
+          <a href="Tech.html" class="card-link">
+          <div class="card">
+            <img src="images/Tech.png" alt="Tech" class="card-icon" />
+            <p>Tech</p>
+          </a>
+          </div>
+          <a href="Enter.html" class="card-link">
+          <div class="card">
+            <img src="images/Burna.png" alt="Entertainment" class="card-icon" />
+            <p>Entertainment</p>
+          </div>
+        </a>
         </div>
-    </section>
+      </section>
+      
 
-    <section class="breaking">
-        <h2>Breaking & Latest News</h2>
-        <div class="breaking-news-list">
-            <!-- Dynamic content: recent/breaking posts -->
-            <p>Loading latest headlines...</p>
+      <section class="breaking">
+        <h2><span class="icon">🗞️</span> Breaking News</h2>
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <span>⚡ Market hits all-time high | 📰 New regulations announced | 🚨 Major tech breakthrough this week | 🏆 Team X wins championship! | 🗣️ Raila Speaks, Kenya Listens|🏀The Next Face of Champions League </span>
+          </div>
+          
         </div>
-    </section>
+      </section>
+      <section class="latest-news">
+        <h2>Latest News</h2>
+        <div id="news-feed"></div>
+      </section>
+      
+      
+      <section class="contacts" id="contacts">
+        <h2><span class="icon">📬</span> Contact Us</h2>
+        <p>
+          For collaborations, testimonials, or inquiries, reach out to us at 
+          <a href="mailto:info@kenyablogapp.com">info@kenyablogapp.com</a>.
+        </p>
+      </section>
+      
 
-    <section class="contacts" id="contacts">
-        <h2>Contact Us</h2>
-        <p>For collaborations, testimonials, or inquiries, reach out to us at <a href="mailto:info@kenyablogapp.com">info@kenyablogapp.com</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Blog App Kenya. All rights reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
         </div>
-    </footer>
+      </footer>
+    <script src="Theme.js"></script>
     <script src="Home.js"></script>
 </body>
 </html>
