@@ -12,7 +12,8 @@ toggle.addEventListener('click', () => {
 
   const newsFeed=document.getElementById('news-feed');
 
-  fetch("https://newsdata.io/api/1/latest?apikey=YOUR_API_KEY&country=ke&language=en&category=politics")
+  fetch("https://newsdata.io/api/1/latest?apikey=pub_85359147204a4676ae83fc7343bb9654c8445&category=politics&country=ke")
+  
   .then(response=>response.json()  )
   .then(
     data=>{
@@ -20,10 +21,11 @@ toggle.addEventListener('click', () => {
         data.results.forEach(article => {
           const articleDiv=document.createElement('div');
           articleDiv.className="news-article";
-          articleDiv.innerHTML`
+          articleDiv.innerHTML=`
           <h3> <a href="${article.link}" target="_blank" rel="noopener noreferrer">${article.title}</a</h3>
           <p>${article.description||""}</p>
           <small>${new Date(article.pubDate).toLocaleString()}</small>
+         
               <hr>
 
           `

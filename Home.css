@@ -11,6 +11,7 @@ body {
     background-color: #f8f9fa;
     color: #333;
     height: 100vh;
+    
 }
 
 a {
@@ -22,6 +23,16 @@ a {
 header {
     background-color: #0f172a;
     padding: 1rem 0;
+    
+}
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a;
+  padding: 1rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 nav ul {
@@ -48,7 +59,7 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 2rem;
+    padding:0 2rem;
     background-color: #0f172a;
 }
 
@@ -385,16 +396,36 @@ nav ul li a:hover {
 }
 .news-article {
   margin-bottom: 20px;
+  background-color: #f5f5f5; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
 .news-article h3 {
   margin: 0;
+  color: #333; 
+  font-size: 1.1rem;
 }
+
 .news-article p {
-  margin: 5px 0;
-}
+  margin: 8px 0;
+  color: #444; }
+
 .news-article small {
-  color: #555;
+  color: #777; 
 }
+
+.news-article a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-article a:hover {
+  text-decoration: underline;
+  color: #0056b3; 
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #0f172a;
