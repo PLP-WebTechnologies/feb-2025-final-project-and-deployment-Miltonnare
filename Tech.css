@@ -298,4 +298,45 @@ nav ul li a:hover {
       padding: 0.5rem 0;
     }
   }
+  @media screen and (max-width: 429px) {
+    
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+  
+    header, .navbar {
+      width: 100vw;
+      padding: 0.5rem 1rem;
+      box-sizing: border-box;
+    }
+  
+    .logo-text {
+      font-size: 1.5rem !important; 
+      white-space: nowrap; 
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 60vw; 
+      display: inline-block;
+      vertical-align: middle;
+    }
+  
+    .logo-tagline {
+      font-size: 1rem !important;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  
+    
+    .nav-links li a {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.5rem;
+    }
+  }
   
