@@ -262,6 +262,35 @@ nav ul li a:hover {
     color: #0f172a;
     transform: scale(1.1);
   }
+  .latest-news {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.news-card {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.news-card h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+}
+
+.news-card p {
+    margin: 5px 0;
+}
+
+.news-card a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
 
   @media (max-width: 768px) {
     .navbar {
