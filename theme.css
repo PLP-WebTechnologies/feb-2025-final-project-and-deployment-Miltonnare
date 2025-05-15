@@ -113,4 +113,12 @@ body.dark-mode {
   .post-card p {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  
+  @media screen and (max-width:768px){
+    .theme-toggle {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+
+    
+  }
