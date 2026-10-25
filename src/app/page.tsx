@@ -19,7 +19,8 @@ interface NewsArticle {
 
 // Server-side fetching of legacy news feed (protecting API keys and caching results)
 async function getNewsFeed(): Promise<NewsArticle[]> {
-  const apiKey = "pub_85359147204a4676ae83fc7343bb9654c8445"
+  const apiKey = process.env.NEWSDATA_API_KEY
+  if (!apiKey) return []
   const url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&category=politics&country=ke`
   try {
     const res = await fetch(url, { next: { revalidate: 3600 } }) // Cache news for 1 hour
